@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".loginpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/whitelogo" />
+
+        <Spinner
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search specific keywords only ex: Microbiology, com.."
+        android:layout_margin="10dp"
+        android:backgroundTint="#C31FBBA6"
+        android:queryBackground="@android:color/transparent"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <SearchView
+        android:id="@+id/filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Filter Scholarships"
+        android:layout_margin="10dp"
+        android:backgroundTint="#C31FBBA6"
+        android:searchIcon="@drawable/filter"
+        android:queryBackground="@android:color/transparent"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:layout_weight="1"/>
+
+    <SearchView
+        android:id="@+id/Sortscholarships"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Sort Scholarships"
+        android:layout_margin="10dp"
+        android:searchIcon="@drawable/filter"
+        android:queryBackground="@android:color/transparent"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:backgroundTint="#C31FBBA6"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/educationfuture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/educationfuture" />
+
+                <Button
+                    android:id="@+id/deadline"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Deadline Varies"
+                    android:textColorHint="@color/green"
+                    android:background="@drawable/shape1"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/shortlist"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|left"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#f9a83f"
+                    android:hint="Shortlist"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/viewapply"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#189e8c"
+                    android:hint="View apply"
+                    android:textColorHint="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/educationfuture1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/educationfuture" />
+
+                <Button
+                    android:id="@+id/deadline1"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Deadline Varies"
+                    android:textColorHint="@color/green"
+                    android:textSize="20dp"
+                    android:background="@drawable/shape1"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/shortlist1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|left"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#f9a83f"
+                    android:hint="Shortlist"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/viewapply1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#189e8c"
+                    android:hint="View apply"
+                    android:textColorHint="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/educationfuture2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/educationfuture" />
+
+                <Button
+                    android:id="@+id/deadline2"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Deadline Varies"
+                    android:textColorHint="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/shortlist2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|left"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#f9a83f"
+                    android:hint="Shortlist"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/viewapply2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#189e8c"
+                    android:hint="View apply"
+                    android:textColorHint="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
