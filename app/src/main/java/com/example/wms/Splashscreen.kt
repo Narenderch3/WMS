@@ -12,7 +12,7 @@ class Splashscreen : AppCompatActivity() {
         setContentView(R.layout.splashscreen)
         val splashScreenDuration = 3000
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, mainpage::class.java))
+            startActivity(Intent(this, Signuppage::class.java))
             finish()
         }, splashScreenDuration.toLong())
     }
